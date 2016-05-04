@@ -7,7 +7,7 @@ describe("use vue directly in js", () => {
 
   it("should work", () => {
     const vm = new Vue({
-      template: '<div v-text="name"></div>',
+      template: "  <div v-text=\"name\"></div>",
       data: {
         name: "fuke"
       }
