@@ -6,8 +6,6 @@ const ComponentA = require("./component-a.vue");
 Vue.config.debug = true;
 Vue.config.async = false;
 
-console.log(ComponentA);
-
 describe("vue component in .vue file", () => {
 
   it("should work", () => {

@@ -1,0 +1,7 @@
+TODO:
+
+☐ Component without template
+☐ Template in other engine
+☐ external script
+
+# vim:ft=tasks

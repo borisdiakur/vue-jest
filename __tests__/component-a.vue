@@ -8,6 +8,11 @@ module.exports = {
     return {
       name: "fuke"
     }
+  },
+  methods: {
+    m: () => {
+        return 1 + x;
+    }
   }
 }
 </script>
