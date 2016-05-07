@@ -19,19 +19,20 @@ module.exports = {
           } else {
             state = match[1];
           }
-          code += eol;
+          code += "//" + line + eol;
         } else {
           if (state === "template") {
             template += line + "\n";
-            code += eol;
+            code += "//" + line + eol;
           } else if (state === "script" || state === "none") {
             code += line + eol;
           } else {
-            code += eol;
+            code += "//" + line + eol;
           }
         }
       }
-      var insertIndex = code.lastIndexOf("}");
+      var insertIndex = code.lastIndexOf("</script>");
+      insertIndex = code.lastIndexOf("}", insertIndex);
       code = code.substr(0, insertIndex - 1) + ', template: ' + JSON.stringify(template.trim()) + code.substr(insertIndex);
 
       code = babel.transform(code, {

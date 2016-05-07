@@ -6,12 +6,7 @@
 module.exports = {
   data() {
     return {
-      name: "fuke"
-    }
-  },
-  methods: {
-    m: () => {
-        return 1 + x;
+      name: "Hello, vue-jest."
     }
   }
 }
