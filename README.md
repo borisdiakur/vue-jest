@@ -19,3 +19,8 @@ Add the following lines to your `package.json`
 
 Then just see the `__tests__` for some examples.
 
+# Problems
+
+The mustache syntax is not working, and I have not figure why. So just use `v-text` and `v-html`
+with computed properties.
+
