@@ -40,7 +40,7 @@ module.exports = {
       // Insert template into script
       if (template.length > 0) {
         var e = script.lastIndexOf('}');
-        script = script.slice(0, e).replace(/,\s+$/g, '') + ', template: ' + JSON.stringify(template.trim()) + script.slice(e);
+        script = script.slice(0, e).replace(/,\s*$/g, '') + ', template: ' + JSON.stringify(template.trim()) + script.slice(e);
       } else {
         // skip
       }
